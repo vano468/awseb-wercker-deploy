@@ -1,4 +1,4 @@
-NAME=`whoami`/awsebcli
+NAME=`whoami`/awseb-wercker-deploy
 
 build:
 	docker build -t $(NAME) --rm .
