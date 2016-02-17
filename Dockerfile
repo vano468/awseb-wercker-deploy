@@ -7,5 +7,5 @@ RUN apt-get update
 RUN apt-get install -y git && \
 		apt-get clean
 
-ADD action /opt/action
-ADD setup /opt/setup
+COPY action /opt/
+COPY setup /opt/
