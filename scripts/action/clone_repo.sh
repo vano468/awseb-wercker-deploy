@@ -7,3 +7,4 @@ then
 fi
 
 git clone $REPO_URL $WERCKER_SOURCE_DIR/project
+git checkout $WERCKER_GIT_BRANCH
