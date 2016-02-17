@@ -2,27 +2,32 @@
 
 if [ ! -n "$AWS_ACCESS_KEY_ID" ]
 then
-  fail "Missing or empty option AWS_ACCESS_KEY_ID"
+  echo "Missing or empty option AWS_ACCESS_KEY_ID"
+  exit 2
 fi
 
 if [ ! -n "$AWS_SECRET_ACCESS_KEY" ]
 then
-  fail "Missing or empty option AWS_SECRET_ACCESS_KEY"
+  echo "Missing or empty option AWS_SECRET_ACCESS_KEY"
+  exit 2
 fi
 
 if [ ! -n "$AWS_REGION" ]
 then
-  fail "Missing or empty option AWS_REGION"
+  echo "Missing or empty option AWS_REGION"
+  exit 2
 fi
 
 if [ ! -n "$EB_APP" ]
 then
-  fail "Missing or empty option EB_APP"
+  echo "Missing or empty option EB_APP"
+  exit 2
 fi
 
 if [ ! -n "$EB_ENV" ]
 then
-  fail "Missing or empty option EB_ENV"
+  echo "Missing or empty option EB_ENV"
+  exit 2
 fi
 
 mkdir -p $HOME/.aws

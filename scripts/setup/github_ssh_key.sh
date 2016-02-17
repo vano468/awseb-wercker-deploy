@@ -2,7 +2,8 @@
 
 if [ ! -n "$GITHUB_SSH_KEY" ]
 then
-  fail "Missing or empty option GITHUB_SSH_KEY"
+  echo "Missing or empty option GITHUB_SSH_KEY"
+  exit 2
 fi
 
 SSH_PATH=~/.ssh 
