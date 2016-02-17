@@ -14,8 +14,8 @@ Host *
 	StrictHostKeyChecking no
 Host github
 	HostName github.com
-  User git
-  IdentityFile /home/.ssh/id_rsa
+	User git
+	IdentityFile /home/.ssh/id_rsa
 EOT
 
 echo -e $GITHUB_SSH_KEY > $SSH_PATH/id_rsa
