@@ -40,6 +40,6 @@ AWS_REGION (ex: us-west-2)
 EB_APP (elasticbeanstalk application name)
 EB_ENV (elasticbeanstalk application environment)
 
-REPO_URL (ex: git@github.com:<username>/<project>.git)
+REPO_URL (repo with project to deploy, ex: git@github.com:<username>/<project>.git)
 GITHUB_SSH_KEY (private key, optional, required if repo is private)
 ```
