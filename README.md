@@ -21,10 +21,10 @@ deploy:
         name: setup aws and eb config
         code: /opt/setup/aws_eb_conf.sh
     - script:
-        name: check EB status
+        name: check eb status
         code: /opt/action/eb_status.sh
     - script:
-        name: deploy to EB
+        name: deploy to eb
         code: /opt/action/eb_deploy.sh
 ```
 You can use you own Docker image instead of `vano468/awseb-wercker-deploy`.
